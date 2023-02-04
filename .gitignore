@@ -30,3 +30,20 @@
 *.exe
 *.out
 *.app
+
+# Custom ignores
+*
+!*/
+!*.*
+tmp
+.vscode
+#ignore the data files (for now)
+data 
+
+# LaTeX
+*.aux
+*.fdb_latexmk
+*.fls 
+*.log 
+*.synctex.gz
+*.pdf
