@@ -58,16 +58,14 @@ benchmarkGraphAlgorithm(std::vector<std::vector<int>>& adjacency_list,
 {
     long double total = 0.0;
 
-    // declare as static const to avoid compiler warning about VLA
-    // (variable length arrays)
-    static const int n = (int)adjacency_list.size(); // truly a constant expression
+    const int n = (int)adjacency_list.size();
     long double times[n];
     for (int i = 0; i < n; i++)
     {
         times[i] = time_function(graph_algorithm, &adjacency_list, i);
         total += times[i];
     }
-    return total;
+    return total/(long double)n;
 }
 
 int main(int argc, char* argv[]){

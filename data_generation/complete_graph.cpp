@@ -1,7 +1,8 @@
 /**
  * @file complete_graph.cpp
  * @author Igor Prado Teixeira Borja (igorpradoborja@gmail.com)
- * @brief
+ * @brief Generates complete graphs (the size is a command line argument) into a 
+ * file.
  * @version 0.1
  * @date 2023-02-03
  */
